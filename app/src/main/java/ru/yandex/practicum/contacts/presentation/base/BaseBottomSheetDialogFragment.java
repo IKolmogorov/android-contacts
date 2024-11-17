@@ -9,12 +9,14 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.DiffUtil;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import ru.yandex.practicum.contacts.databinding.FragmentBottomSheetBinding;
+import ru.yandex.practicum.contacts.presentation.filter.model.FilterContactTypeUi;
 
 public abstract class BaseBottomSheetDialogFragment<T extends BaseBottomSheetViewModel> extends BottomSheetDialogFragment {
 
@@ -63,3 +65,4 @@ public abstract class BaseBottomSheetDialogFragment<T extends BaseBottomSheetVie
         super.onDestroy();
     }
 }
+
